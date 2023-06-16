@@ -1,44 +1,61 @@
-<ion-content [fullscreen]="true">
+<ion-content class="ion-justify-content-center" [fullscreen]="true">
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button shape="round" click="exibir(7)">C</ion-button>
-            <ion-button shape="round" click="exibir(8)">%</ion-button>
-            <ion-button shape="round" click="exibir(9)"><ion-icon name="backspace-outline"></ion-icon></ion-button>
-            <ion-button shape="round" click="exibir(8)">/+</ion-button>
+            <ion-col size="12">
+                <ion-item>
+                    <ion-input style="height: 130px;"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+
+
+
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-button color="medium" shape="round" click="mostrar(7)">AC</ion-button>
+            <ion-button color="medium" shape="round" click="cem(8)">%</ion-button>
+            <ion-button color="medium" shape="round" click="mostrar(9)"><ion-icon
+                    name="backspace-outline"></ion-icon></ion-button>
+            <ion-button color="warning" shape="round" click="divisao(8)">\</ion-button>
+
         </ion-row>
     </ion-grid>
 
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button shape="round" click="exibir(7)">7</ion-button>
-            <ion-button shape="round" click="exibir(8)">8</ion-button>
-            <ion-button shape="round" click="exibir(9)">9</ion-button>
-            <ion-button shape="round" click="exibir(8)">*</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(7)">7</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(8)">8</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(9)">9</ion-button>
+            <ion-button color="warning" shape="round" click="multiplicacao(8)">x</ion-button>
         </ion-row>
     </ion-grid>
 
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button shape="round" click="exibir(4)">4</ion-button>
-            <ion-button shape="round" click="exibir(5)">5</ion-button>
-            <ion-button shape="round" click="exibir(6)">6</ion-button>
-            <ion-button shape="round" click="exibir(8)">-</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(4)">4</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(5)">5</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(6)">6</ion-button>
+            <ion-button color="warning" shape="round" click="subtracao(8)">-</ion-button>
         </ion-row>
     </ion-grid>
 
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button shape="round" click="exibir(1)">1</ion-button>
-            <ion-button shape="round" click="exibir(2)">2</ion-button>
-            <ion-button shape="round" click="exibir(3)">3</ion-button>
-            <ion-button shape="round" click="exibir(8)">+</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(1)">1</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(2)">2</ion-button>
+            <ion-button color="dark" shape="round" click="mostrar(3)">3</ion-button>
+            <ion-button color="warning" shape="round" click="adicao(8)">+</ion-button>
         </ion-row>
     </ion-grid>
 
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button shape="round" click="exibir(1)">0</ion-button>
-            <ion-button shape="round" click="exibir(2)">=</ion-button>
+            <ion-button class="zero" color="dark" shape="round" click="mostrar(1)">0</ion-button>
+            <ion-button color="dark" shape="round" click="mostar(1)">,</ion-button>
+            <ion-button class="" color="warning" shape="round" click="mostrar(2)">=</ion-button>
         </ion-row>
     </ion-grid>
 

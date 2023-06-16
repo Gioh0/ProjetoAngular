@@ -1,7 +1,12 @@
 ion-content {
   --background: rgb(242, 56, 158);
-  --background: linear-gradient(90deg, rgb(83, 172, 207) 14%, rgb(87, 156, 236) 51%,  rgb(110, 159, 206) 89%);
+  --background: #424242;
 }
+
+.zero{
+  width: 160px;
+}
+
 
 .divisor {
   height: 50vh;
@@ -10,8 +15,14 @@ ion-content {
 }
 
 .imagem{
-  background-image: url(https://images3.alphacoders.com/130/1301279.jpg);
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+ion-button{
+width:80px;
+height:75px;
+font-size:x-large;
 }
