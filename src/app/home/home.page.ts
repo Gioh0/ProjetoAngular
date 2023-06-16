@@ -12,46 +12,34 @@ import { IonicModule } from '@ionic/angular';
 export class HomePage {
   valor1: any = null;
   valor2: any = null;
-  operacao: any = null;
   exibicao: any = null;
+  botao: any = null;
 
   mostrar(numero: any) {
     if (this.valor1 == null) {
       this.valor1 = numero;
-    }
-    else {
+    } else {
       if (this.valor2 == null) {
         this.valor2 = numero;
       }
     }
     console.log(this.valor1);
-    console.log(this.valor2)
+    console.log(this.valor2);
   }
-  adicao(operacao: any) {
-    if (this.operacao == '+') {
-      this.mostrar = this.valor1 + this.valor2;
+
+  operacao(operador: any) {
+
+    if (operador == '+') {
+      this.exibicao = this.valor1 + this.valor2;
     }
-  }
-  subtracao(operacao: any) {
-    if (this.operacao == '-') {
+    else if (operador == '-') {
       this.exibicao = this.valor1 - this.valor2;
     }
-  }
-  divisao(operacao: any) {
-    if (this.operacao == '/') {
-      this.exibicao = this.valor1 / this.valor2;
-    }
-  }
-
-  multiplicacao(operacao: any) {
-    if (this.operacao == '*') {
+    else if (operador == '*') {
       this.exibicao = this.valor1 * this.valor2;
     }
-  }
-
-  cem(operacao: any) {
-    if (this.operacao == '%') {
-      this.exibicao = this.valor1 * this.valor2 / 100;
+    else if (operador == '/') {
+      this.exibicao = this.valor1 / this.valor2;
     }
-  }
-}
+    console.log(this.exibicao);
+  }}
