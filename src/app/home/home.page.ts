@@ -29,7 +29,7 @@ export class HomePage {
   }
   adicao(operacao: any) {
     if (this.operacao == '+') {
-      this.exibicao = this.valor1 + this.valor2;
+      this.mostrar = this.valor1 + this.valor2;
     }
   }
   subtracao(operacao: any) {
