@@ -41,5 +41,18 @@ export class HomePage {
     else if (operador == '/') {
       this.exibicao = this.valor1 / this.valor2;
     }
-    console.log(this.exibicao);
-  }}
+    else if (operador == '%') {
+      this.exibicao = this.valor1 % this.valor2;
+    }
+  }
+
+  limpar(){
+    this.valor1 = null;
+    this.valor2 = null;
+    this.exibicao = null;
+  }
+
+  botaoresultado(){
+    this.botao = this.exibicao;
+  }
+}
