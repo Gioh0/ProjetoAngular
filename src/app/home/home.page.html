@@ -3,6 +3,15 @@
         <ion-row class="ion-justify-content-center">
             <ion-col size="12">
                 <ion-item>
+                    <ion-label> {{this.valor1}} {{ this.operador }} {{ this.valor2 }}</ion-label>
+                </ion-item>
+
+                
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+            <ion-col size="12">
+                <ion-item>
                     <ion-label> {{this.exibicao}}</ion-label>
                 </ion-item>
             </ion-col>
@@ -11,42 +20,42 @@
     <ion-grid>
         <ion-row class="ion-justify-content-center">
             <ion-button color="medium" shape="round" (click)="limpar()">AC</ion-button>
-            <ion-button color="medium" shape="round" (click)="exibicao(8)">%</ion-button>
+            <ion-button color="medium" shape="round" (click)="operacao(8)">%</ion-button>
             <ion-button color="medium" shape="round" (click)="limpar()">
                 <ion-icon name="backspace-outline"></ion-icon>
             </ion-button>
-            <ion-button color="warning" shape="round" (click)="exibicao('/')">\</ion-button>
+            <ion-button color="warning" shape="round" (click)="operacao('/')">/</ion-button>
         </ion-row>
     </ion-grid>
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button color="dark" shape="round" (click)="exibicao(7)">7</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(8)">8</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(9)">9</ion-button>
-            <ion-button color="warning" shape="round" (click)="exibicao('*')">x</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(7)">7</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(8)">8</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(9)">9</ion-button>
+            <ion-button color="warning" shape="round" (click)="operacao('*')">x</ion-button>
         </ion-row>
     </ion-grid>
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button color="dark" shape="round" (click)="exibicao(4)">4</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(5)">5</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(6)">6</ion-button>
-            <ion-button color="warning" shape="round" (click)="exibicao('-')">-</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(4)">4</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(5)">5</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(6)">6</ion-button>
+            <ion-button color="warning" shape="round" (click)="operacao('-')">-</ion-button>
         </ion-row>
     </ion-grid>
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button color="dark" shape="round" (click)="exibicao(1)">1</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(2)">2</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(3)">3</ion-button>
-            <ion-button color="warning" shape="round" (click)="exibicao('+')">+</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(1)">1</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(2)">2</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(3)">3</ion-button>
+            <ion-button color="warning" shape="round" (click)="operacao('+')">+</ion-button>
         </ion-row>
     </ion-grid>
     <ion-grid>
         <ion-row class="ion-justify-content-center">
-            <ion-button class="zero" color="dark" shape="round" (click)="exibicao(1)">0</ion-button>
-            <ion-button color="dark" shape="round" (click)="exibicao(1)">,</ion-button>
-            <ion-button color="warning" shape="round" (click)="exibicao(2)">=</ion-button>
+            <ion-button class="zero" color="dark" shape="round" (click)="definirValor(0)">0</ion-button>
+            <ion-button color="dark" shape="round" (click)="definirValor(0)">,</ion-button>
+            <ion-button color="warning" shape="round" (click)="botao()">=</ion-button>
         </ion-row>
     </ion-grid>
 </ion-content>

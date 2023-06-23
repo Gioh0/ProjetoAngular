@@ -14,8 +14,9 @@ export class HomePage {
   valor2: any = null;
   exibicao: any = null;
   botao: any = null;
+  operador: any = null;
 
-  mostrar(numero: any) {
+  definirValor(numero: any) {
     if (this.valor1 == null) {
       this.valor1 = numero;
     } else {
@@ -29,20 +30,28 @@ export class HomePage {
 
   operacao(operador: any) {
 
+    const valor1 = parseFloat(this.valor1);
+    const valor2 = parseFloat(this.valor2);
+  
     if (operador == '+') {
+      this.operador = '+';
       this.exibicao = this.valor1 + this.valor2;
     }
     else if (operador == '-') {
+      this.operador = '-';
       this.exibicao = this.valor1 - this.valor2;
     }
     else if (operador == '*') {
+      this.operador = '*';
       this.exibicao = this.valor1 * this.valor2;
     }
     else if (operador == '/') {
+      this.operador = '/';
       this.exibicao = this.valor1 / this.valor2;
     }
     else if (operador == '%') {
-      this.exibicao = this.valor1 % this.valor2;
+      this.operador = '%';
+      this.exibicao = this.valor1 * this.valor2 / 100;
     }
   }
 
